@@ -22,6 +22,10 @@ Create an OSM Server and Run TileMill on Ubuntu 20.04
 
 ## Installation
 
+NOTE:
+
+I am working on the actual machine instead of a cloud server and thus have the luxary of using a GUI based text editor (`gedit`) to make configuration changes. If your are using a ssh session to do this, replace `gedit` with a terminal based editor (i.e. `nano`). 
+
 ### Database Setup
 
 Install the needed packages:
@@ -267,7 +271,7 @@ Pages = 7904 # Rounded down
 
 Edit `/etc/sysctl.conf` file:
 ```
-sudo nano /etc/sysctl.conf
+sudo gedit /etc/sysctl.conf
 ```
 
 Then add `vm.nr_hugepages = 7904` at the end of the document
