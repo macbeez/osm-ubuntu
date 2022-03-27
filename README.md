@@ -74,15 +74,16 @@ To    :
 ```
 RequiresMountsFor=/etc/postgresql/%I /var/lib/postgresql/12/2TB1/osm_psql_db
 ```
-Some explanation: 
+...Some explanation: 
 
-`%I` expands to "version/cluster" so the standard installation is expecting the cluster to be located at:
+...`%I` expands to "version/cluster" so the standard installation is expecting the cluster to be located at:
 
-```
-/var/lib/postgresql/%I ==> /var/lib/postgresql/12/osm_psql_db
-```
+...```
+.../var/lib/postgresql/%I ==> /var/lib/postgresql/12/osm_psql_db
+...```
+...Which will of course throw an error since the cluster isn't located there. 
 
-After that change, let's reload daemon for good measure:
+After that change, let's reload the daemon for good measure:
 ```
 sudo systemctl daemon-reload
 ```
