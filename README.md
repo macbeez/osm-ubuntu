@@ -167,7 +167,7 @@ sudo setfacl -R -m u:system_user:rwx /home/osm/
 cd /home/osm/
 ```
 
-Replace `system_user` with your username, we need this permission (for now) to download the map data to this directory. Later we will change permissions so that `postgres` as access. 
+Replace `system_user` with your username, we need this permission (for now) to download the map data to this directory. Later we will change permissions so that `postgres` has access. 
 
 
 Create a downloads folder for the next steps and move into it
